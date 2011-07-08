@@ -8,16 +8,48 @@ class IncDecNumberCommand(sublime_plugin.TextCommand):
             word_reg = self.view.word(region)
             if not word_reg.empty():
 
-                # expand region if previous symbol is "-"
+                inc_dec = int(delta)
+
+                # expand region for test the previous symbol is "-" or "#"
                 prev_sym_pos = word_reg.begin() - 1
                 prev_sym_reg = sublime.Region(prev_sym_pos, prev_sym_pos + 1)
-                if self.view.substr(prev_sym_reg) == "-":
-                    word_reg = sublime.Region(prev_sym_pos, word_reg.end())
 
-                word = self.view.substr(word_reg)
-                match = re.compile('(-*[0-9]+)([a-zA-Z%]+)?').match(word)
+                # hex string
+                if self.view.substr(prev_sym_reg) == "#":
 
-                if match:
-                    result = int(match.group(1)) + int(delta)
-                    match2 = match.group(2) if match.group(2) else ""
-                    self.view.replace(edit, word_reg, str(result) + match2)
+                    # applies for one of hex numbers
+                    if delta in [1, -1]:
+                        # take the symbol to the left
+                        # if the cursor between '#' and the number - move it to the right
+                        if word_reg.begin() == region.begin():
+                            word_reg = sublime.Region(word_reg.begin(), region.end() + 1)
+                        else:
+                            word_reg = sublime.Region(region.begin() - 1, region.end())
+
+                        word = self.view.substr(word_reg)
+                        match = re.compile('([0-9a-fA-F])').match(word)
+
+                    else:
+                        inc_dec /= 10
+                        word = self.view.substr(word_reg)
+                        match = re.compile('([0-9a-fA-F]{3}([0-9a-fA-F]{3})?){1}$').match(word)
+
+                    if match:
+                        new_word = ""
+                        for char in word:
+                            char = hex(int(char, 16) + inc_dec & 0xf)[2:]
+                            new_word += char
+                        self.view.replace(edit, word_reg, new_word)
+
+                # simple the positive & negative numbers
+                else:
+                    if self.view.substr(prev_sym_reg) == "-":
+                        word_reg = sublime.Region(prev_sym_pos, word_reg.end())
+
+                    word = self.view.substr(word_reg)
+                    match = re.compile('(-*[0-9]+)([a-zA-Z%]+)?').match(word)
+
+                    if match:
+                        result = int(match.group(1)) + inc_dec
+                        match2 = match.group(2) if match.group(2) else ""
+                        self.view.replace(edit, word_reg, str(result) + match2)

@@ -6,6 +6,7 @@ Increase/Decrease number by delta_value
 Support Multiple Selections
 
 ![blame screenshot](https://github.com/rmaksim/Sublime-Text-2-Solutions/raw/master/inc_dec_number.gif)
+![blame screenshot](https://github.com/rmaksim/Sublime-Text-2-Solutions/raw/master/inc_dec_hex_color.gif)
 
 
 Example of the correct values:
@@ -19,6 +20,17 @@ Example of the correct values:
 
     12px, -5em, 100%, 42sometext, (24), [12, -13], {77: -88}
 
+  * hex colors
+    #123 #123456
+
+Pressing the button `alt+up/down` increases/decreases
+the one character to the left
+
+If the cursor between the '#' and the hex number in the #123
+- the action applies to first character '1'
+
+Pressing the button `super+up/down` increases/decreases
+the total value of the hex color on +111/-111 or +111111/-111111
 
 Not supported:
 --------------
@@ -26,6 +38,10 @@ Not supported:
   * numbers in the text and after
 
     qwe42asd, text42
+
+  * incorrect hex colors
+
+    #1 #12 #1234 #12345 #1234567...
 
 
 Default (Linux).sublime-keymap
