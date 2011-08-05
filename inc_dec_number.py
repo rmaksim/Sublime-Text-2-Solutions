@@ -41,6 +41,8 @@ class IncDecNumberCommand(sublime_plugin.TextCommand):
                             new_word += char
                         self.view.replace(edit, word_reg, new_word)
 
+                    return # hex section
+
                 # simple the positive & negative numbers
                 else:
                     if self.view.substr(prev_sym_reg) == "-":
@@ -53,3 +55,22 @@ class IncDecNumberCommand(sublime_plugin.TextCommand):
                         result = int(match.group(1)) + inc_dec
                         match2 = match.group(2) if match.group(2) else ""
                         self.view.replace(edit, word_reg, str(result) + match2)
+
+                        return # number section
+
+                # opposite values
+                opp_values = [
+                    ("true", "false"),
+                    ("True", "False"),
+                    ("TRUE", "FALSE"),
+                    ("left", "right"),
+                ]
+                new_value = ''
+                for k, v in opp_values:
+                    if k == word:
+                        new_value = v
+                    if v == word:
+                        new_value = k
+
+                if new_value:
+                    self.view.replace(edit, word_reg, new_value)
