@@ -8,18 +8,23 @@ inc_dec_number.py
 ![blame screenshot](https://github.com/rmaksim/Sublime-Text-2-Solutions/raw/master/inc_dec_number.gif)
 ![blame screenshot](https://github.com/rmaksim/Sublime-Text-2-Solutions/raw/master/inc_dec_hex_color.gif)
 ![blame screenshot](https://github.com/rmaksim/Sublime-Text-2-Solutions/raw/master/inc_dec_opposite.gif)
+![blame screenshot](https://github.com/rmaksim/Sublime-Text-2-Solutions/raw/master/inc_dec_float.gif)
 
 
 Example of the correct values:
 ------------------------------
 
-  * positive and negative numbers
+  * positive and negative integer numbers
 
     => ... -2, -1, 0, 1, 2, ...
 
-  * positive and negative numbers and any text after them
+  * positive and negative floating-point numbers
 
-    => 12px, -5em, 100%, 42sometext, (24), [12, -13], {77: -88}
+    => ... -1.1, -1.19, 0.119, 1.1119, 2.11119, ...
+
+  * positive and negative (integer and floating-point) numbers and any text after them
+
+    => 12px, -5em, 100%, 42sometext, (24), [12, -13], {77: -88}, 0.1em, 62.5%/1.5
 
   * hex colors
 
@@ -32,6 +37,9 @@ Example of the correct values:
 
 Pressing the key `alt+up/down` increases/decreases
 the one character to the left
+
+If value is floating-point - increases/decreases applies from last position.
+for example 1.19 + `alt+up` = 1.20 and 1.11200 + `alt+down` = 1.11199
 
 If the cursor between the '#' and the hex number in the #123
 - the action applies to first character '1'
