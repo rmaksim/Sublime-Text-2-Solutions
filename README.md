@@ -16,3 +16,6 @@ https://github.com/rmaksim/Sublime-Text-2-Inc-Dec-Value
 on the configured value
 
 and a bonus - string actions (UPPER, lower, Capitalize)
+
+**Forum Thread**
+http://www.sublimetext.com/forum/viewtopic.php?f=5&t=2395
