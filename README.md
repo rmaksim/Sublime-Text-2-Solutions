@@ -1,8 +1,9 @@
 # Sublime Text 2 Solutions
 
+
 ## Inc-Dec-Value
 
-#### v0.1.0
+#### v0.1.1
 
 https://github.com/rmaksim/Sublime-Text-2-Inc-Dec-Value
 
@@ -19,3 +20,13 @@ and a bonus - string actions (UPPER, lower, Capitalize)
 
 **Forum Thread**
 http://www.sublimetext.com/forum/viewtopic.php?f=5&t=2395
+
+
+## Goto-CSS-Declaration
+
+#### v0.0.1
+
+https://github.com/rmaksim/Sublime-Text-2-Goto-CSS-Declaration
+
+Goto CSS declaration in an open *.css file from other file (*.html, *.js, *.other_extantion)
+
