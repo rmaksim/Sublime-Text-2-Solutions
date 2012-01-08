@@ -1,6 +1,7 @@
 # Sublime Text 2 Solutions
 
 
+---
 ## Inc-Dec-Value
 
 #### v0.1.1
@@ -22,6 +23,7 @@ and a bonus - string actions (UPPER, lower, Capitalize)
 http://www.sublimetext.com/forum/viewtopic.php?f=5&t=2395
 
 
+---
 ## Goto-CSS-Declaration
 
 #### v0.1.0
