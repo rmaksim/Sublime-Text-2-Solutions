@@ -24,9 +24,11 @@ http://www.sublimetext.com/forum/viewtopic.php?f=5&t=2395
 
 ## Goto-CSS-Declaration
 
-#### v0.0.1
+#### v0.1.0
 
 https://github.com/rmaksim/Sublime-Text-2-Goto-CSS-Declaration
 
 Goto CSS declaration in an open *.css file from other file (*.html, *.js, *.other_extantion)
 
+**Forum Thread**
+http://www.sublimetext.com/forum/viewtopic.php?f=5&t=4397
