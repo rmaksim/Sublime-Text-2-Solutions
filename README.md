@@ -28,7 +28,7 @@ http://www.sublimetext.com/forum/viewtopic.php?f=5&t=2395
 
 https://github.com/rmaksim/Sublime-Text-2-Goto-CSS-Declaration
 
-Goto CSS declaration in an open *.css file from other file (*.html, *.js, *.other_extantion)
+Goto CSS declaration in an open \*.css file from other file (\*.html, \*.js, \*.other_extantion)
 
 **Forum Thread**
 http://www.sublimetext.com/forum/viewtopic.php?f=5&t=4397
