@@ -26,7 +26,7 @@ http://www.sublimetext.com/forum/viewtopic.php?f=5&t=2395
 ---
 ## Goto-CSS-Declaration
 
-**v0.2.0**
+**v0.2.1**
 
 https://github.com/rmaksim/Sublime-Text-2-Goto-CSS-Declaration
 
