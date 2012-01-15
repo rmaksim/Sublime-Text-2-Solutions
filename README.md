@@ -34,3 +34,16 @@ Goto CSS declaration in an open \*.css (.less, .sass, .other) file from other fi
 
 **Forum Thread**
 http://www.sublimetext.com/forum/viewtopic.php?f=5&t=4397
+
+
+---
+## Image-Viewer
+
+**v0.1.0**
+
+https://github.com/rmaksim/Sublime-Text-2-Image-Viewer
+
+View image from CSS declaration, HTML <img> tag, and may be from something else :)
+
+**Forum Thread**
+http://www.sublimetext.com/forum/viewtopic.php?f=5&t=4514
