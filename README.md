@@ -39,11 +39,11 @@ http://www.sublimetext.com/forum/viewtopic.php?f=5&t=4397
 ---
 ## Image-Viewer
 
-**v0.1.0**
+**v0.1.1**
 
 https://github.com/rmaksim/Sublime-Text-2-Image-Viewer
 
-View image from CSS declaration, HTML <img> tag, and may be from something else :)
+View image from CSS declaration, HTML \<img\> tag, and may be from something else :)
 
 **Forum Thread**
 http://www.sublimetext.com/forum/viewtopic.php?f=5&t=4514
