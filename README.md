@@ -39,7 +39,7 @@ http://www.sublimetext.com/forum/viewtopic.php?f=5&t=4397
 ---
 ## Image-Viewer
 
-**v0.1.1**
+**v0.1.2**
 
 https://github.com/rmaksim/Sublime-Text-2-Image-Viewer
 
