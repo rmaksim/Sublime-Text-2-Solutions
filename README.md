@@ -4,7 +4,7 @@
 ---
 ## Inc-Dec-Value
 
-**v0.1.1**
+**v0.1.2**
 
 https://github.com/rmaksim/Sublime-Text-2-Inc-Dec-Value
 
