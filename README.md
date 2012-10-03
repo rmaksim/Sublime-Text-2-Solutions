@@ -4,7 +4,7 @@
 ---
 ## Inc-Dec-Value
 
-**v0.1.2**
+**v0.1.3** - added support for the mouse wheel
 
 https://github.com/rmaksim/Sublime-Text-2-Inc-Dec-Value
 
@@ -18,6 +18,8 @@ https://github.com/rmaksim/Sublime-Text-2-Inc-Dec-Value
 on the configured value
 
 and a bonus - string actions (UPPER, lower, Capitalize)
+
+Instead of the arrows can use your mouse wheel.
 
 **Forum Thread**
 http://www.sublimetext.com/forum/viewtopic.php?f=5&t=2395
