@@ -4,6 +4,10 @@
 ---
 ## Inc-Dec-Value
 
+**v0.1.9** - Fixed apply_integer (x -> -x when cursor before x)
+**v0.1.8** - [#29](https://github.com/rmaksim/Sublime-Text-2-Inc-Dec-Value/pull/29) Fix apply_hex_color exception
+**v0.1.7** - [#19](https://github.com/rmaksim/Sublime-Text-2-Inc-Dec-Value/issues/19) Swapping the color notation in CSS
+**v0.1.6** - [#20](https://github.com/rmaksim/Sublime-Text-2-Inc-Dec-Value/issues/20) (upper, lower, capitalize) works on non-ascii strings
 **v0.1.5** - #15 Don't place action in undo history when nothing happens
 **v0.1.4** - #14 Saving the position of the cursors/selections on the change
 **v0.1.3** - added support for the mouse wheel
